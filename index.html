@@ -1,1 +1,650 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS2 @ ICCV 2025 | Multimodal Reasoning and Slow Thinking</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold">MARS2</span> @ICCV2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#submission">Submission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competition">Competition</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主标题区域 -->
+    <header class="hero-section">
+        <div class="container text-center py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-3 fw-bold text-white mb-3">MARS2 Workshop</h1>
+                    <h2 class="text-light mb-4">Multimodal Reasoning and Slow Thinking in Large Model Era:<br>Towards System2 and Beyond</h2>
+                    <p class="lead text-light mb-4">
+                        <i class="bi bi-calendar-event"></i> October, 2025 | 
+                        <i class="bi bi-geo-alt"></i> Honolulu, Hawaii | 
+                        <i class="bi bi-link"></i> In conjunction with ICCV 2025
+                    </p>
+                    <div class="d-flex justify-content-center gap-4 mt-4">
+                        <a href="#submission" class="btn btn-primary btn-lg px-4">
+                            <i class="bi bi-file-earmark-text"></i> Submit Paper
+                        </a>
+                        <a href="#competition" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-trophy"></i> Join Competition
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="container my-5">
+        <!-- About Section -->
+        <!-- About Section - 优化后的两端对齐宽版布局 -->
+    <section id="about" class="py-5">
+        <div class="row justify-content-center">
+            <!-- 扩大列宽为col-lg-10并添加max-width限制 -->
+            <div class="col-lg-10" style="max-width: 900px;">
+                <h2 class="section-title mb-4 text-center fw-bold">About MARS2 Workshop</h2>
+                <div class="d-flex justify-content-center mb-5">
+                    <img src="assets/images/logos/iccv-logo.png" alt="ICCV Logo" class="img-fluid me-4" style="max-height: 80px;">
+                    <img src="assets/images/logos/mars2-logo.png" alt="MARS2 Logo" class="img-fluid" style="max-height: 80px;">
+                </div>
+                <p class="text-justify" style="text-align-last: left; hyphens: auto;">
+                    The era of large reasoning models (LRM) has begun, bringing new opportunities and challenges to the computer vision community. The strong semantic intelligence of LLM and the long-chain reasoning ability of LRM have opened new frontiers in visual understanding and interpretation.
+                </p>
+                <p class="text-justify" style="text-align-last: left; hyphens: auto;">
+                    This workshop aims to bridge the gap between computer vision and large language/reasoning models, focusing on complex tasks requiring advanced reasoning capabilities. We will explore how models can comprehend complex relationships through slow-thinking approaches like Neuro-Symbolic reasoning, Chain-of-Thought, and Multi-step Reasoning, pushing beyond traditional fixed tasks to understand object interactions within complex scenes.
+                </p>
+                <p class="text-justify" style="text-align-last: left; hyphens: auto;">
+                    The goal is to bring together perspectives from computer vision, multimodal learning, and large language models to address outstanding challenges in multimodal reasoning and slow thinking in the context of large reasoning models, fostering more flexible and robust understanding in AI systems.
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- 信息卡片保持原样 -->
+        <!-- <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-people-fill text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h4 class="card-title">300+ Attendees</h4>
+                        <p class="card-text">Anticipated audience size from academia and industry</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-file-earmark-text-fill text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h4 class="card-title">20+ Posters</h4>
+                        <p class="card-text">Space for research presentations and discussions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-trophy-fill text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h4 class="card-title">3 Challenges</h4>
+                        <p class="card-text">Benchmarking multimodal reasoning capabilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Keynote Speakers -->
+        <section id="speakers" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5 fw-bold">Keynote Speakers</h2>
+                <div class="row g-4">
+                    <!-- Speaker 1 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/saining_xie.png" class="organizer-img" alt="Saining Xie">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Saining Xie</h5>
+                                <p class="card-text text-muted">Assistant Professor</p>
+                                <p class="card-text">NYU Courant</p>
+                                <a href="https://www.sainingxie.com/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Speaker 2 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/jiajun_wu.jpg" class="organizer-img" alt="Jiajun Wu">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Jiajun Wu</h5>
+                                <p class="card-text text-muted">Assistant Professor</p>
+                                <p class="card-text">Stanford University</p>
+                                <a href="https://jiajunwu.com/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Speaker 3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/kristen_grauman.jpg" class="organizer-img" alt="Kristen Grauman">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Kristen Grauman</h5>
+                                <p class="card-text text-muted">Professor</p>
+                                <p class="card-text">UT Austin</p>
+                                <a href="https://www.cs.utexas.edu/~grauman/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Speaker 4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/ishan_misra.jpg" class="organizer-img" alt="Ishan Misra">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ishan Misra</h5>
+                                <p class="card-text text-muted">Research Scientist</p>
+                                <p class="card-text">Meta</p>
+                                <a href="https://imisra.github.io/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Speaker 5 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/junyang_lin.png" class="organizer-img" alt="Junyang Lin">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Junyang Lin</h5>
+                                <p class="card-text text-muted">Tech Lead</p>
+                                <p class="card-text">Alibaba Group</p>
+                                <a href="https://justinlin610.github.io/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Speaker 6 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/speakers/hamid_rezatofighi.png" class="organizer-img" alt="Hamid Rezatofighi">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Hamid Rezatofighi</h5>
+                                <p class="card-text text-muted">Assistant Professor</p>
+                                <p class="card-text">Monash University</p>
+                                <a href="https://vl4ai.erc.monash.edu/" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers -->
+        <section id="organizers" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5 fw-bold">Organizers</h2>
+                <div class="row g-4">
+                    <!-- Organizer 1 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/david_clifton.jpg" class="organizer-img" alt="David Clifton">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">David Clifton</h5>
+                                <p class="card-text text-muted">Professor</p>
+                                <p class="card-text">University of Oxford</p>
+                                <a href="https://scholar.google.com/citations?user=mFN2KJ4AAAAJ" class="btn btn-sm btn-outline-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Organizer 2 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/chen_cheng.png" class="organizer-img" alt="Chen Cheng">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chen Cheng</h5>
+                                <p class="card-text text-muted">Core Maintainer</p>
+                                <p class="card-text">ModelScope Community</p>
+                                <a href="https://github.com/modelscope" class="btn btn-sm btn-outline-primary">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Organizer 3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/chen_change_loy.jpg" class="organizer-img" alt="Chen Change Loy">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chen Change Loy</h5>
+                                <p class="card-text text-muted">Professor</p>
+                                <p class="card-text">Nanyang Technological University</p>
+                                <a href="https://scholar.google.co.uk/citations?user=559LF80AAAAJ" class="btn btn-sm btn-outline-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Organizer 4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/shengwu_xiong.jpg" class="organizer-img" alt="Shengwu Xiong">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Shengwu Xiong</h5>
+                                <p class="card-text text-muted">Professor</p>
+                                <p class="card-text">Wuhan University of Technology</p>
+                                <a href="https://scholar.google.com.hk/citations?user=wWqRC4IAAAAJ" class="btn btn-sm btn-outline-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Organizer 5 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/peng_xu.jpg" class="organizer-img" alt="Peng Xu">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Peng Xu</h5>
+                                <p class="card-text text-muted">Assistant Research Fellow</p>
+                                <p class="card-text">Tsinghua University</p>
+                                <a href="https://scholar.google.com/citations?user=9_v4tC0AAAAJ" class="btn btn-sm btn-outline-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Organizer 6 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="organizer-img-container">
+                            <img src="assets/images/organizers/jiajun_zhang.jpg" class="organizer-img" alt="Jiajun Zhang">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Jiajun Zhang</h5>
+                                <p class="card-text text-muted">Professor</p>
+                                <p class="card-text">Chinese Academy of Sciences</p>
+                                <a href="https://scholar.google.com/citations?user=93zngeYAAAAJ&hl=en" class="btn btn-sm btn-outline-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Competition Organizers - Three Columns Layout -->
+        <section id="competition-organizers" class="py-3">
+            <div class="container">
+                <h2 class="section-title text-center mb-3 fw-bold">Competition Organizers</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-2">
+                                <div class="row organizers-grid">
+                                    <!-- Column 1 -->
+                                    <div class="col-md-4">
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Ruilin Yao</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Xinwei Long</span>
+                                            <span class="text-muted small">Tsinghua University</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Bo Zhang</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Column 2 -->
+                                    <div class="col-md-4">
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Tianyu Zou</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Yifang Zhang</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Jirui Huang</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Column 3 -->
+                                    <div class="col-md-4">
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Yichen Zhao</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Yaxiong Chen</span>
+                                            <span class="text-muted small">Wuhan University of Technology</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center py-0 px-1">
+                                            <span class="fw-bold">Peng Xu</span>
+                                            <span class="text-muted small">Tsinghua University</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Schedule -->
+        <section id="program" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5 fw-bold">Preliminary Program</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Presenter</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:45-09:00</td>
+                                <td>Opening remarks</td>
+                                <td>Peng Xu</td>
+                            </tr>
+                            <tr>
+                                <td>09:00-09:35</td>
+                                <td>Invited talk and Q&A #1</td>
+                                <td>Saining Xie</td>
+                            </tr>
+                            <tr>
+                                <td>09:35-10:10</td>
+                                <td>Invited talk and Q&A #2</td>
+                                <td>Kristen Grauman</td>
+                            </tr>
+                            <tr>
+                                <td>10:10-11:00</td>
+                                <td>Oral presentation</td>
+                                <td>≈10 Papers</td>
+                            </tr>
+                            <tr>
+                                <td>11:00-11:35</td>
+                                <td>Invited talk and Q&A #3</td>
+                                <td>Ishan Misra</td>
+                            </tr>
+                            <tr>
+                                <td>11:35-12:10</td>
+                                <td>Remark of the Challenge-1</td>
+                                <td>Peng Xu</td>
+                            </tr>
+                            <tr>
+                                <td>12:10-12:30</td>
+                                <td>Panel discussion</td>
+                                <td>Saining Xie, etc.</td>
+                            </tr>
+                            <tr>
+                                <td>12:30-13:30</td>
+                                <td>Lunch</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>13:30-14:30</td>
+                                <td>Poster presentation</td>
+                                <td>Poster area</td>
+                            </tr>
+                            <tr>
+                                <td>14:30-15:10</td>
+                                <td>Invited talk and Q&A #4</td>
+                                <td>Jiajun Wu</td>
+                            </tr>
+                            <tr>
+                                <td>15:10-15:50</td>
+                                <td>Invited talk and Q&A #5</td>
+                                <td>Hamid Rezatofighi</td>
+                            </tr>
+                            <tr>
+                                <td>15:50-16:30</td>
+                                <td>Remark of the Challenge-2</td>
+                                <td>Chen Change Loy</td>
+                            </tr>
+                            <tr>
+                                <td>16:30-17:10</td>
+                                <td>Invited talk and Q&A #6</td>
+                                <td>Junyang Lin</td>
+                            </tr>
+                            <tr>
+                                <td>17:10-17:30</td>
+                                <td>Closing remarks</td>
+                                <td>Chen Change Loy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paper Submission -->
+        <section id="submission" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5 fw-bold">Paper Submission</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Important Dates</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Full Paper/Other Submission Deadline
+                                        <span class="badge bg-primary rounded-pill">May 30, 2025</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Notification of Acceptance
+                                        <span class="badge bg-primary rounded-pill">June 20, 2025</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Camera-Ready Papers Due
+                                        <span class="badge bg-primary rounded-pill">July 10, 2025</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="card-title mt-4 fw-bold">Submission Guidelines</h4>
+                                <p class="text-justify" style="text-align-last: left; hyphens: auto;">
+                                    Submissions must be in PDF format and conform to ICCV 2025 proceedings style (double-blind review). The maximum paper length is [X] pages (including references).
+                                </p>
+                                
+                                <p>We welcome submissions of:</p>
+                                <ul>
+                                    <li>Unpublished papers (to be included in proceedings)</li>
+                                    <li>Abstracts, posters, and work-in-progress (poster presentation only)</li>
+                                    <li>Papers already accepted at other venues (poster presentation only)</li>
+                                </ul>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                                    <a href="docs/cfp.pdf" class="btn btn-primary me-md-2" download="MARS2_CFP_ICCV2025.pdf">
+                                        <i class="bi bi-download"></i> Download CFP
+                                    </a>
+                                    <a href="https://iccv.thecvf.com/Conferences/2025/CallForWorkshops" class="btn btn-outline-primary" target="_blank">
+                                        <i class="bi bi-box-arrow-up-right"></i> Submission Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competition -->
+        <section id="competition" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5 fw-bold">Multimodal Reasoning Competition</h2>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Competition Tracks</h4>
+                                <div class="row g-4 mt-3">
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">
+                                                Track 1
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">VG-RS</h5>
+                                                <p class="card-text">Visual Grounding in Real-world Scenarios</p>
+                                                <p class="card-text"><small>Evaluating scene perception, object localization, and spatial reasoning</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">
+                                                Track 2
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">VQA-SA</h5>
+                                                <p class="card-text">Visual Question Answering with Spatial Awareness</p>
+                                                <p class="card-text"><small>Evaluating spatial, commonsense, and counterfactual reasoning</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">
+                                                Track 3
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">VR-Ads</h5>
+                                                <p class="card-text">Visual Reasoning in Creative Advertisement Videos</p>
+                                                <p class="card-text"><small>Evaluating cognitive reasoning abilities in advertisement videos</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="card-title mt-5 fw-bold">Competition Timeline</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Competition Start Date
+                                        <span class="badge bg-primary rounded-pill">May 1, 2025</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Dataset Release (New Benchmarks)
+                                        <span class="badge bg-primary rounded-pill">April 15, 2025</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Submission Deadline
+                                        <span class="badge bg-primary rounded-pill">June 15, 2025</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Winners Announcement
+                                        <span class="badge bg-primary rounded-pill">During Workshop</span>
+                                    </li>
+                                </ul>
+
+                                <div class="alert alert-info mt-4">
+                                    <h5><i class="bi bi-info-circle"></i> Dataset Information</h5>
+                                    <p>The competition will feature a custom-made dataset with <strong>2K+ images, 1.5K+ videos, 17K+ question-answer pairs, and 15K+ bbox annotations</strong>.</p>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                                    <a href="#" class="btn btn-primary me-md-2">
+                                        <i class="bi bi-joystick"></i> Register for Competition
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary">
+                                        <i class="bi bi-file-earmark-text"></i> Competition Guidelines
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>MARS2 Workshop</h5>
+                    <p>Multimodal Reasoning and Slow Thinking in Large Model Era: Towards System2 and Beyond</p>
+                    <p>In conjunction with ICCV 2025</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://iccv.thecvf.com/Conferences/2025" class="text-white-50">ICCV 2025 Main Conference</a></li>
+                        <li><a href="https://iccv.thecvf.com/Conferences/2025/CallForPapers" class="text-white-50">Call for Papers</a></li>
+                        <!-- <li><a href="#" class="text-white-50">Competition Details</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:peng_xu@tsinghua.edu.cn" class="text-white-50">peng_xu@tsinghua.edu.cn</a></p>
+                    <div class="social-links mt-3">
+                        <!-- <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a> -->
+                        <!-- <a href="#" class="text-white me-2"><i class="bi bi-github"></i></a> -->
+                        <!-- <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 MARS2 Workshop. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Designed for ICCV 2025 Workshop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 平滑滚动 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
