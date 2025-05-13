@@ -155,3 +155,38 @@ footer a:hover {
 .organizers-list span {
     padding: 8px 0;
 }
+
+
+.organizers-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    -webkit-overflow-scrolling: touch;
+}
+.organizers-scroll-row {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    padding: 5px 5px 15px;
+}
+.organizer-scroll-item {
+    flex: 0 0 auto;
+    width: 180px;
+}
+.organizer-scroll-item .card {
+    min-height: 120px;
+}
+/* Hide scrollbar but keep functionality */
+.organizers-scroll-container::-webkit-scrollbar {
+    height: 5px;
+}
+.organizers-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.organizers-scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.organizers-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
